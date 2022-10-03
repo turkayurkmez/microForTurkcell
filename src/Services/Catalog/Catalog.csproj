@@ -4,6 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..\BookStore</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\..\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Application\Catalog.Application.csproj" />
+    <ProjectReference Include="..\..\..\BookStore\src\Services\Catalog\Catalog.Application\Catalog.Application.csproj" />
   </ItemGroup>
 
 </Project>

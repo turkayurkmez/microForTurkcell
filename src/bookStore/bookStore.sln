@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{53D1D11A-B8F2-4182-99E7-982D4BBC653C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog", "..\Services\Catalog\Catalog.csproj", "{E4DB1B32-2FD7-4E84-810C-64B1F38BF23F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Application", "..\..\..\..\..\..\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Application\Catalog.Application.csproj", "{DF1413AC-DADD-49E1-88A7-87163D317D67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.DataAccess", "..\..\..\..\..\..\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\Catalog.DataAccess.csproj", "{C1160340-E046-40C7-8081-3843174721BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Domains", "..\..\..\..\..\..\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\Catalog.Domains.csproj", "{2B0024BB-475E-4742-9FE6-37C8117016C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4DB1B32-2FD7-4E84-810C-64B1F38BF23F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DB1B32-2FD7-4E84-810C-64B1F38BF23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DB1B32-2FD7-4E84-810C-64B1F38BF23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DB1B32-2FD7-4E84-810C-64B1F38BF23F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1413AC-DADD-49E1-88A7-87163D317D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1413AC-DADD-49E1-88A7-87163D317D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1413AC-DADD-49E1-88A7-87163D317D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1413AC-DADD-49E1-88A7-87163D317D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1160340-E046-40C7-8081-3843174721BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1160340-E046-40C7-8081-3843174721BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1160340-E046-40C7-8081-3843174721BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1160340-E046-40C7-8081-3843174721BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B0024BB-475E-4742-9FE6-37C8117016C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0024BB-475E-4742-9FE6-37C8117016C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0024BB-475E-4742-9FE6-37C8117016C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0024BB-475E-4742-9FE6-37C8117016C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4DB1B32-2FD7-4E84-810C-64B1F38BF23F} = {53D1D11A-B8F2-4182-99E7-982D4BBC653C}
+		{DF1413AC-DADD-49E1-88A7-87163D317D67} = {53D1D11A-B8F2-4182-99E7-982D4BBC653C}
+		{C1160340-E046-40C7-8081-3843174721BA} = {53D1D11A-B8F2-4182-99E7-982D4BBC653C}
+		{2B0024BB-475E-4742-9FE6-37C8117016C1} = {53D1D11A-B8F2-4182-99E7-982D4BBC653C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98AF4C8C-E08F-4EF1-885F-8E07838BA7B6}
+	EndGlobalSection
+EndGlobal

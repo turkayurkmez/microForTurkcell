@@ -477,8 +477,7 @@
       },
       "Catalog.Application/1.0.0": {
         "dependencies": {
-          "Catalog.DataAccess": "1.0.0",
-          "Catalog.Domains": "1.0.0"
+          "Catalog.DataAccess": "1.0.0"
         },
         "runtime": {
           "Catalog.Application.dll": {}

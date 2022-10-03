@@ -1,0 +1,34 @@
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.deps.json
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.pdb
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\bin\Debug\net6.0\Catalog.Domains.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\bin\Debug\net6.0\Catalog.Domains.pdb
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.AssemblyInfo.cs
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.csproj.CopyComplete
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\refint\Catalog.DataAccess.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.pdb
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\ref\Catalog.DataAccess.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.runtimeconfig.json
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.genruntimeconfig.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.deps.json
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.runtimeconfig.json
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\bin\Debug\net6.0\Catalog.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\bin\Debug\net6.0\Catalog.Domains.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\bin\Debug\net6.0\Catalog.Domains.pdb
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.csproj.CopyComplete
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\refint\Catalog.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\Catalog.DataAccess.genruntimeconfig.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.DataAccess\obj\Debug\net6.0\ref\Catalog.DataAccess.dll

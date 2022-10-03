@@ -1,0 +1,24 @@
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\bin\Debug\net6.0\Catalog.Domains.deps.json
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\bin\Debug\net6.0\Catalog.Domains.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\bin\Debug\net6.0\Catalog.Domains.pdb
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.AssemblyInfo.cs
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\refint\Catalog.Domains.dll
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.pdb
+C:\Users\turka\source\repos\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Domains\obj\Debug\net6.0\ref\Catalog.Domains.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\bin\Debug\net6.0\Catalog.Domains.deps.json
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\bin\Debug\net6.0\Catalog.Domains.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\bin\Debug\net6.0\Catalog.Domains.pdb
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\refint\Catalog.Domains.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\Catalog.Domains.pdb
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.Domains\obj\Debug\net6.0\ref\Catalog.Domains.dll
