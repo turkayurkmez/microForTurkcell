@@ -1,5 +1,7 @@
 using Catalog.Application;
+using Catalog.DataAccess.Data;
 using Catalog.DataAccess.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +12,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IBookRepository, FakeBookRepository>();
+builder.Services.AddScoped<IBookRepository, EFBookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
+var connectionString = builder.Configuration.GetConnectionString("db");
+builder.Services.AddDbContext<CatalogDbContext>(opt => opt.UseSqlServer(connectionString, b => b.MigrationsAssembly("Catalog.DataAccess")));
 
 var app = builder.Build();
 
+var dbInstance = app.Services.CreateScope().ServiceProvider.GetRequiredService<CatalogDbContext>();
+PrepareDb.Initialize(dbInstance);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
