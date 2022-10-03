@@ -10,4 +10,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\kisisel\Architecture\MicroServices\Documenntation\Building MicroServices with .NET\bookStore\Catalog.Application\Catalog.Application.csproj" />
+  </ItemGroup>
+
 </Project>
