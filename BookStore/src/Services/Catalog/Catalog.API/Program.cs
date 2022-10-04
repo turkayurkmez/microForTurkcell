@@ -1,4 +1,4 @@
-using Catalog.Application;
+﻿using Catalog.Application;
 using Catalog.DataAccess.Data;
 using Catalog.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +19,7 @@ var connectionString = builder.Configuration.GetConnectionString("db");
 connectionString = connectionString.Replace("[HOST]", defaultHost);
 builder.Services.AddDbContext<CatalogDbContext>(opt => opt.UseSqlServer(connectionString, b => b.MigrationsAssembly("Catalog.DataAccess")));
 
+Console.WriteLine($"Dikkat: Bağlantı {connectionString}");
 
 
 var app = builder.Build();
