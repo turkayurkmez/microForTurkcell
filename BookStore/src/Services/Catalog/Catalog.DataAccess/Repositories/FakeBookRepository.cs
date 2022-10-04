@@ -15,6 +15,11 @@ namespace Catalog.DataAccess.Repositories
            };
         }
 
+        public Book GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IList<Book> SearchBooksByName(string name)
         {
             return new List<Book>()

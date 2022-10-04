@@ -12,6 +12,11 @@ namespace Catalog.Application
             _bookRepository = bookRepository;
         }
 
+        public Book GetBook(int id)
+        {
+            return _bookRepository.GetById(id);
+        }
+
         public IList<Book> GetBooks()
         {
             return _bookRepository.GetAll();

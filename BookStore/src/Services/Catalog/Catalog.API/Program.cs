@@ -1,6 +1,7 @@
 ﻿using Catalog.Application;
 using Catalog.DataAccess.Data;
 using Catalog.DataAccess.Repositories;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,23 @@ connectionString = connectionString.Replace("[HOST]", defaultHost);
 builder.Services.AddDbContext<CatalogDbContext>(opt => opt.UseSqlServer(connectionString, b => b.MigrationsAssembly("Catalog.DataAccess")));
 
 Console.WriteLine($"Dikkat: Bağlantı {connectionString}");
+
+
+builder.Services.AddMassTransit(configurator =>
+{
+    configurator.UsingRabbitMq((context, config) =>
+    {
+        config.Host("localhost", "/", host =>
+        {
+            host.Username("guest");
+            host.Password("guest");
+        });
+
+        config.ConfigureEndpoints(context);
+    });
+
+
+});
 
 
 var app = builder.Build();

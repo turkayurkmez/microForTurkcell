@@ -63,3 +63,10 @@ C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src
 C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\obj\Debug\net6.0\Catalog.API.pdb
 C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\obj\Debug\net6.0\Catalog.API.genruntimeconfig.cache
 C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\obj\Debug\net6.0\ref\Catalog.API.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MassTransit.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MessagesAndEvents.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API\bin\Debug\net6.0\MessagesAndEvents.pdb

@@ -17,6 +17,11 @@ namespace Catalog.DataAccess.Repositories
             return context.Books.ToList();
         }
 
+        public Book GetById(int id)
+        {
+            return context.Books.FirstOrDefault(x => x.Id == id);
+        }
+
         public IList<Book> SearchBooksByName(string name)
         {
             throw new NotImplementedException();

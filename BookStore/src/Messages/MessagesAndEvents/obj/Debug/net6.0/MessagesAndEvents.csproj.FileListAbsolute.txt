@@ -1,0 +1,12 @@
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\bin\Debug\net6.0\MessagesAndEvents.deps.json
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\bin\Debug\net6.0\MessagesAndEvents.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\bin\Debug\net6.0\MessagesAndEvents.pdb
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\MessagesAndEvents.csproj.AssemblyReference.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\MessagesAndEvents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\MessagesAndEvents.AssemblyInfoInputs.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\MessagesAndEvents.AssemblyInfo.cs
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\MessagesAndEvents.csproj.CoreCompileInputs.cache
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\MessagesAndEvents.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\refint\MessagesAndEvents.dll
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\MessagesAndEvents.pdb
+C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Messages\MessagesAndEvents\obj\Debug\net6.0\ref\MessagesAndEvents.dll
