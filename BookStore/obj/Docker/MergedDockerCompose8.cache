@@ -1,0 +1,94 @@
+services:
+  basket.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Basket/Basket.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: basketapi
+    ports:
+    - target: 80
+  catalog.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Catalog/Catalog.API/Dockerfile
+    depends_on:
+      ms-sql-2:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DefaultHost: ms-sql-2
+    image: catalogapi
+    ports:
+    - published: 8080
+      target: 80
+    - target: 80
+  ms-sql-2:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Pa55W0rd
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1453
+      target: 1433
+  order.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Order/Order.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: orderapi
+    ports:
+    - target: 80
+  payment.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Payment/Payment.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: paymentapi
+    ports:
+    - target: 80
+  rabbitmq:
+    image: rabbitmq:3.10-management
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+  shipment.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Shipment/Shipment.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: shipmentapi
+    ports:
+    - target: 80
+  stock.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Stock/Stock.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: stockapi
+    ports:
+    - target: 80
+version: '3.4'

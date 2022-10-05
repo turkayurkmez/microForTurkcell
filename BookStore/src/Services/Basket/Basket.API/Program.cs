@@ -1,4 +1,5 @@
 using Basket.API.Consumers;
+using Basket.API.Services;
 using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,12 +11,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<IBasketService, BookService>();
+
 builder.Services.AddMassTransit(configurator =>
 {
     configurator.AddConsumer<AddBookToBasketRequestConsumer>();
     configurator.UsingRabbitMq((context, config) =>
     {
-        config.Host("localhost", "/", host =>
+        config.Host("rabbitmq", "/", host =>
         {
             host.Username("guest");
             host.Password("guest");

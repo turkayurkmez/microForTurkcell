@@ -5,7 +5,7 @@ using MassTransit;
 
 var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 {
-    cfg.Host("localhost", "/", host =>
+    cfg.Host("rabbitmq", "/", host =>
     {
         host.Username("guest");
         host.Password("guest");

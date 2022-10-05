@@ -2,6 +2,12 @@ version: '3.4'
 
 services:
 
+  rabbitmq:
+    image: rabbitmq:3.10-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
   ms-sql-2:
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
@@ -21,6 +27,51 @@ services:
      - "8080:80"
     depends_on:
      - ms-sql-2
+     - rabbitmq
 
   
   
+  stock.api:
+    image: ${DOCKER_REGISTRY-}stockapi
+    build:
+      context: .
+      dockerfile: src/Services/Stock/Stock.API/Dockerfile
+    depends_on:
+      - rabbitmq
+
+
+  shipment.api:
+    image: ${DOCKER_REGISTRY-}shipmentapi
+    build:
+      context: .
+      dockerfile: src/Services/Shipment/Shipment.API/Dockerfile
+    depends_on:
+      - rabbitmq
+
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: src/Services/Payment/Payment.API/Dockerfile
+    depends_on:
+      - rabbitmq
+
+
+  order.api:
+    image: ${DOCKER_REGISTRY-}orderapi
+    build:
+      context: .
+      dockerfile: src/Services/Order/Order.API/Dockerfile
+    depends_on:
+      - rabbitmq
+
+
+
+  basket.api:
+    image: ${DOCKER_REGISTRY-}basketapi
+    build:
+      context: .
+      dockerfile: src/Services/Basket/Basket.API/Dockerfile
+    depends_on:
+      - rabbitmq

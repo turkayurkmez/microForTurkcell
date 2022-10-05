@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fDesicb1tgCRPWSMx6sx7wxxJ3+EYw5jH5XmeEgi1+eQ0taxedXAqsZq2x1NnXKk7vyweAB4PpG2Pp7CB7Tn9Q==",
+  "dgSpecHash": "TLAd7kArmXzuQkekrVrYfDclXby2scE+EKIUYEVmq3qndAitVIt6Qb21SU1bzHRtJXAO8uzicM6mcXiwNvQgNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Turkcell\\Microservices\\Group1\\BookStore\\src\\Services\\Order\\Order.API\\Order.API.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.options\\3.1.18\\microsoft.extensions.options.3.1.18.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.18\\microsoft.extensions.primitives.3.1.18.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\turka\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

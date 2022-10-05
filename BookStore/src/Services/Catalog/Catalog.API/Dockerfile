@@ -7,6 +7,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["src/Services/Catalog/Catalog.API/Catalog.API.csproj", "src/Services/Catalog/Catalog.API/"]
+COPY ["src/Messages/MessagesAndEvents/MessagesAndEvents.csproj", "src/Messages/MessagesAndEvents/"]
 COPY ["src/Services/Catalog/Catalog.Application/Catalog.Application.csproj", "src/Services/Catalog/Catalog.Application/"]
 COPY ["src/Services/Catalog/Catalog.DataAccess/Catalog.DataAccess.csproj", "src/Services/Catalog/Catalog.DataAccess/"]
 COPY ["src/Services/Catalog/Catalog.Domains/Catalog.Domains.csproj", "src/Services/Catalog/Catalog.Domains/"]

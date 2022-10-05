@@ -21,6 +21,7 @@ namespace Order.API.Controllers
             this.mediator = mediator;
         }
 
+        //[Authorize(Roles ="Admin")]
         [HttpPost]
         public async Task<IActionResult> CrateOrder(CreateOrderRequest createOrderRequest)
         {

@@ -1,0 +1,244 @@
+services:
+  basket.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Basket/Basket.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Basket.API
+      target: base
+    container_name: Basket.API
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: basketapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Basket\Basket.API:/app:rw
+    - C:\Users\turka\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\turka\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore:/src:rw
+  catalog.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Catalog/Catalog.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Catalog.API
+      target: base
+    container_name: Catalog.API
+    depends_on:
+      ms-sql-2:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      DefaultHost: ms-sql-2
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: catalogapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8080
+      target: 80
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Catalog\Catalog.API:/app:rw
+    - C:\Users\turka\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\turka\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore:/src:rw
+  ms-sql-2:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Pa55W0rd
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1453
+      target: 1433
+  order.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Order/Order.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Order.API
+      target: base
+    container_name: Order.API
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: orderapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Order\Order.API:/app:rw
+    - C:\Users\turka\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\turka\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore:/src:rw
+  payment.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Payment/Payment.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Payment.API
+      target: base
+    container_name: Payment.API
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: paymentapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Payment\Payment.API:/app:rw
+    - C:\Users\turka\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\turka\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore:/src:rw
+  rabbitmq:
+    image: rabbitmq:3.10-management
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+  shipment.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Shipment/Shipment.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Shipment.API
+      target: base
+    container_name: Shipment.API
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: shipmentapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Shipment\Shipment.API:/app:rw
+    - C:\Users\turka\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\turka\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore:/src:rw
+  stock.api:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore
+      dockerfile: src/Services/Stock/Stock.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Stock.API
+      target: base
+    container_name: Stock.API
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: stockapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore\src\Services\Stock\Stock.API:/app:rw
+    - C:\Users\turka\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\turka\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\turka\source\repos\Kurumsal\Turkcell\Microservices\Group1\BookStore:/src:rw
+version: '3.4'
