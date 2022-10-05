@@ -24,8 +24,8 @@ namespace Catalog.API.Controllers
             return Ok(productService.GetBooks());
         }
 
-        [Route("[action]")]
-        [HttpGet("{id}")]
+
+        [HttpGet("[action]{id}")]
         public IActionResult AddProductToBasket(int id, string userId)
         {
             var addedBook = productService.GetBook(id);
